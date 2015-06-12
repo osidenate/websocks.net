@@ -1,0 +1,22 @@
+{
+  "name": "websocks.net",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osidenate/websocks.net.git"
+  },
+  "author": "Nathan Nelson",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/osidenate/websocks.net/issues"
+  },
+  "homepage": "https://osidenate.github.io/websocks.net",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-gh-pages": "^0.10.0",
+    "grunt-shell": "^1.1.2"
+  }
+}
