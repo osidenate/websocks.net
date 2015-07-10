@@ -1,23 +1,21 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>websocks.net - Nathan Nelson's Project site</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="container">
+        <header class="row entry-header">
+            <div class="col-md-3 logo">
+                <img src="img/placeholder-logo.png">
+            </div>
+            <div class="col-md-9">
+                <h1>websocks</h1>
+                <h5>by Nathan Nelson</h5>
+                <p>This site is a place for me to show off what projects I'm currently working on.</p>
+            </div>
+        </header>
+    </body>
+</html>
