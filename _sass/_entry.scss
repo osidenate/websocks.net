@@ -17,6 +17,15 @@ nav {
       color: #20569E;
       font-size: 2.5em;
       margin-bottom: 0;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #173E73;
+      }
     }
   }
 
