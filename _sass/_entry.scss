@@ -1,25 +1,30 @@
-.container {
-  margin-top: 30px;
+html {
+  background: url('../img/dots.png') repeat;
 }
 
-.logo {
-  position: relative;
-  text-align: center;
-  color: #fff;
-  line-height: 25px;
+.container {
+  margin-top: 30px;
+  background: #fff;
+}
 
-  .logo-bg {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #0086B3;
-    //background: url('../img/logo-background.jpg') center / 500%;
-    opacity: 0.5;
-    z-index: -1;
+nav {
+  .logo {
+    text-align: center;
+
+    h1 {
+      font-family: 'Play', 'Courier', monospace;
+      line-height: 80px;
+      color: #20569E;
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
   }
 
-  h1 {
-    line-height: 56px;
-    text-shadow: 1px 1px 0 #000;
+  hr {
+    border-top: 1px dotted #ddd;
+  }
+
+  p {
+    margin-top: 15px;
   }
 }
