@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Reset some basic elements
  */
@@ -469,6 +470,37 @@ nav .logo {
     nav .logo h1 a:hover {
       color: #173E73; }
 nav hr {
-  border-top: 1px dotted #ddd; }
-nav p {
-  margin-top: 15px; }
+  border-top: 1px dotted #ddd;
+  margin: 15px 0; }
+nav ul.contact {
+  margin-left: 0; }
+  nav ul.contact li {
+    list-style-type: none;
+    line-height: 2em; }
+  nav ul.contact a {
+    text-decoration: none; }
+  nav ul.contact a:hover::after {
+    content: '»'; }
+  nav ul.contact .navicon {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle; }
+  nav ul.contact .navicon.glyphicon-envelope {
+    top: 3px;
+    left: 5px;
+    color: #A9A9A9;
+    font-size: 0.9em; }
+  nav ul.contact .navicon-github {
+    background: url("../img/GitHub-Mark-32px.png") no-repeat;
+    background-size: 16px;
+    background-position: 4px 2px; }
+  nav ul.contact .navicon-so {
+    background: url("../img/so-icon-resized.png") no-repeat;
+    background-size: 24px;
+    background-position: -1px -3px; }
+  nav ul.contact .navicon-linkedin {
+    background: url("../img/In-2CRev-14px.png") no-repeat;
+    background-size: 14px;
+    background-position: 4px 3px; }
