@@ -1,13 +1,19 @@
 ---
 layout: default
 ---
-<div class="projects">
-    <div class="panel panel-default">
+<ul class="projects">
+    {% for post in site.posts %}
+    {% if post.layout == 'project' %}
+
+    <li class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Project title</h3>
+            <h3 class="panel-title">{{ post.title }}</h3>
         </div>
         <div class="panel-body">
-            Project description
+            {{ post.content }}
         </div>
-    </div>
-</div>
+    </li>
+
+    {% endif %}
+    {% endfor %}
+</ul>
