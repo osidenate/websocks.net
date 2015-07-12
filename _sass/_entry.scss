@@ -6,34 +6,3 @@ html {
   margin-top: 30px;
   background: #fff;
 }
-
-nav {
-  .logo {
-    text-align: center;
-
-    h1 {
-      font-family: 'Play', 'Courier', monospace;
-      line-height: 80px;
-      color: #20569E;
-      font-size: 2.5em;
-      margin-bottom: 0;
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: #173E73;
-      }
-    }
-  }
-
-  hr {
-    border-top: 1px dotted #ddd;
-  }
-
-  p {
-    margin-top: 15px;
-  }
-}
