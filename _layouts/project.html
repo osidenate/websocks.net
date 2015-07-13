@@ -1,5 +1,16 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p>{{ content }}</p>
+
+<div class="project">
+    <h2>{{ page.title }}</h2>
+
+    <p>GitHub: <a href="{{ page.gitHubUrl }}">{{ page.gitHubUrl }}</a></p>
+
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Overview</a></li>
+        <li role="presentation"><a href="#">Demo</a></li>
+    </ul>
+
+    <p>{{ content }}</p>
+</div>
