@@ -8,9 +8,26 @@ layout: default
     <p>GitHub: <a href="{{ page.gitHubUrl }}">{{ page.gitHubUrl }}</a></p>
 
     <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Overview</a></li>
-        <li role="presentation"><a href="#">Demo</a></li>
+        <li role="presentation" class="active">
+            <a href="#overview"
+               aria-controls="overview"
+               role="tab"
+               data-toggle="tab">Overview</a>
+        </li>
+        <li role="presentation">
+            <a href="#demo"
+               aria-controls="demo"
+               role="tab"
+               data-toggle="tab">Demo</a>
+        </li>
     </ul>
 
-    <p>{{ content }}</p>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="overview">
+            {{ content }}
+        </div>
+        <div role="tabpanel" class="tab-pane" id="demo">
+            {% include {{ page.demoHtml }} %}
+        </div>
+    </div>
 </div>
