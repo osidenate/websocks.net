@@ -4,10 +4,10 @@
     <title>websocks</title>
     <description>Nathan Nelson&#39;s software projects.
 </description>
-    <link>http://osidenate.github.io/websocks.net/</link>
-    <atom:link href="http://osidenate.github.io/websocks.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Jul 2015 13:51:58 -0700</pubDate>
-    <lastBuildDate>Mon, 13 Jul 2015 13:51:58 -0700</lastBuildDate>
+    <link>http://websocks.net/</link>
+    <atom:link href="http://websocks.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 13 Jul 2015 14:08:57 -0700</pubDate>
+    <lastBuildDate>Mon, 13 Jul 2015 14:08:57 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -15,8 +15,8 @@
         <description>&lt;p&gt;This is test&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jul 2015 00:00:00 -0700</pubDate>
-        <link>http://osidenate.github.io/websocks.net/project/2015/07/12/latency-monitor.html</link>
-        <guid isPermaLink="true">http://osidenate.github.io/websocks.net/project/2015/07/12/latency-monitor.html</guid>
+        <link>http://websocks.net/project/2015/07/12/latency-monitor.html</link>
+        <guid isPermaLink="true">http://websocks.net/project/2015/07/12/latency-monitor.html</guid>
         
         
         <category>project</category>
@@ -41,8 +41,8 @@
 
 </description>
         <pubDate>Thu, 11 Jun 2015 07:46:44 -0700</pubDate>
-        <link>http://osidenate.github.io/websocks.net/jekyll/update/2015/06/11/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://osidenate.github.io/websocks.net/jekyll/update/2015/06/11/welcome-to-jekyll.html</guid>
+        <link>http://websocks.net/jekyll/update/2015/06/11/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://websocks.net/jekyll/update/2015/06/11/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
