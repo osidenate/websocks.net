@@ -3,8 +3,8 @@ title: websocks
 email: osidenate@gmail.com
 description: >
   Nathan Nelson's software projects.
-baseurl: "/websocks.net"
-url: "http://osidenate.github.io"
+baseurl: ""
+url: "http://websocks.net"
 github_username:  osidenate
 
 # Build settings
