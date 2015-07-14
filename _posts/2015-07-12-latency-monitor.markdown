@@ -8,4 +8,6 @@ gitHubUrl: https://github.com/osidenate/sla-monitor
 demoHtml: demo-latency-monitor.html
 ---
 
-This is test
+This is a test
+
+<button class="btn btn-primary">This is a button</button>
