@@ -16,5 +16,10 @@
 
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        {% if page.jsBundle %}
+        {% for src in page.jsBundle %}
+        <script src="{{ src }}"></script>
+        {% endfor %}
+        {% endif %}
     </body>
 </html>

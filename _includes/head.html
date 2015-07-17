@@ -10,4 +10,10 @@
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+    {% if page.cssBundle %}
+    {% for src in page.cssBundle %}
+    <link rel="stylesheet" href="{{ src }}">
+    {% endfor %}
+    {% endif %}
 </head>

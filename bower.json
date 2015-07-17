@@ -2,6 +2,7 @@
   "name": "websocks.net",
   "version": "0.0.0",
   "homepage": "http://websocks.net/",
+  "private": true,
   "authors": [
     "Nathan Nelson <osidenate@gmail.com>"
   ],
@@ -14,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "osidenate-sla-web-client": "1.0.2"
   }
 }
