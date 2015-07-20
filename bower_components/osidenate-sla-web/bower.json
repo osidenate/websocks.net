@@ -1,0 +1,22 @@
+{
+  "name": "osidenate-sla-web",
+  "homepage": "https://github.com/osidenate/sla-web",
+  "authors": [
+    "Nathan Nelson <osidenate@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/osidenate/sla-web.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "firebase": "~2.2.5",
+    "angular": "~1.4.0",
+    "angularfire": "~1.1.1",
+    "bootstrap": "~3.3.5"
+  }
+}
