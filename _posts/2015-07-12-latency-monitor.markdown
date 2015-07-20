@@ -19,5 +19,4 @@ jsBundle:
 
 This is a test. Hello World
 
-![SLA Monitor Diagram]
-(http://websocks.net/img/sla-monitor-diagram.png)
+![SLA Monitor Diagram](http://websocks.net/img/sla-monitor-diagram.png)
