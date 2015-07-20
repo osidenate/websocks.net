@@ -17,6 +17,7 @@ jsBundle:
     - /bower_components/osidenate-sla-web/dist/latency-monitor.js
 ---
 
-This is a test
+This is a test. Hello World
 
-<button class="btn btn-primary">This is a button</button>
+![SLA Monitor Diagram]
+(http://websocks.net/img/sla-monitor-diagram.png)
