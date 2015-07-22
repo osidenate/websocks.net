@@ -14,20 +14,42 @@ layout: default
                role="tab"
                data-toggle="tab">Overview</a>
         </li>
+
+        {% if page.screenshotBundle %}
+        <li role="presentation">
+            <a href="#screenshots"
+                aria-controls="screenshots"
+                role="tab"
+                data-toggle="tab">Screenshots</a>
+        </li>
+        {% endif %}
+
+        {% if page.demoHtml %}
         <li role="presentation">
             <a href="#demo"
                aria-controls="demo"
                role="tab"
                data-toggle="tab">Demo</a>
         </li>
+        {% endif %}
     </ul>
 
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="overview">
             {{ content }}
         </div>
+
+        {% if page.screenshotBundle %}
+        <div role="tabpanel" class="tab-pane" id="screenshots">
+            {% include screenshots.html %}
+        </div>
+        {% endif page.demoHtml %}
+
+        {% if page.demoHtml %}
         <div role="tabpanel" class="tab-pane" id="demo">
             {% include {{ page.demoHtml }} %}
         </div>
+        {% endif page.demoHtml %}
+
     </div>
 </div>

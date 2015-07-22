@@ -1,10 +1,11 @@
 ---
+title: "sla-web"
 layout: project
-title:  "Latency Monitor Project"
-date:   2015-07-12
 categories: project
+permalink: project/sla-web
+
 brief: "Hello World"
-gitHubUrl: https://github.com/osidenate/sla-monitor
+gitHubUrl: https://github.com/osidenate/sla-web
 demoHtml: demo-latency-monitor.html
 cssBundle:
     - /bower_components/osidenate-sla-web/dist/latency-monitor.css
