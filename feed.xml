@@ -6,24 +6,9 @@
 </description>
     <link>http://websocks.net/</link>
     <atom:link href="http://websocks.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Jul 2015 16:20:54 -0700</pubDate>
-    <lastBuildDate>Mon, 20 Jul 2015 16:20:54 -0700</lastBuildDate>
+    <pubDate>Wed, 22 Jul 2015 16:11:20 -0700</pubDate>
+    <lastBuildDate>Wed, 22 Jul 2015 16:11:20 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
-    
-      <item>
-        <title>Latency Monitor Project</title>
-        <description>&lt;p&gt;This is a test. Hello World&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://websocks.net/img/sla-monitor-diagram.png&quot; alt=&quot;SLA Monitor Diagram&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 12 Jul 2015 00:00:00 -0700</pubDate>
-        <link>http://websocks.net/project/2015/07/12/latency-monitor.html</link>
-        <guid isPermaLink="true">http://websocks.net/project/2015/07/12/latency-monitor.html</guid>
-        
-        
-        <category>project</category>
-        
-      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
