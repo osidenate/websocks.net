@@ -2,7 +2,12 @@ ul.projects {
   margin-left: 0;
   list-style-type: none;
 
-  .panel-body .btn {
+  .btn-check-it-out {
     float: right;
+    color: #2a7ae2;
+  }
+
+  .btn-check-it-out:hover {
+    color: #333;
   }
 }

@@ -1,9 +1,11 @@
-html {
-  background: url('../img/dots.png') repeat;
-}
+@media (min-width: 768px) {
+  html {
+    background: url('../img/dots.png') repeat;
+  }
 
-.container {
-  margin-top: 15px;
-  padding-top: 10px;
-  background: #fff;
+  .container {
+    margin-top: 15px;
+    padding-top: 10px;
+    background: #fff;
+  }
 }
