@@ -13,8 +13,11 @@ module.exports = function(grunt) {
             }
         },
         shell: {
-            jekyll: {
+            jekyll_build: {
                 command: 'jekyll build'
+            },
+            jekyll_serve: {
+                command: 'jekyll serve'
             }
         },
         clean: {
@@ -32,8 +35,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-gh-pages');
 
+    grunt.registerTask('serve', ['shell:jekyll_serve']);
+
     grunt.registerTask('deploy', [
-        'shell:jekyll',
+        'shell:jekyll_build',
         'clean:site',
         'gh-pages:deploy'
     ]);
