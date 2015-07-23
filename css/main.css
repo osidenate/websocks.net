@@ -295,6 +295,15 @@ pre {
 ul.projects {
   margin-left: 0;
   list-style-type: none; }
+  ul.projects .tags {
+    color: #777;
+    font-size: 0.8em; }
+  ul.projects .tags strong {
+    color: #333; }
+  ul.projects .tag {
+    margin-left: 2px; }
+  ul.projects .tag:not(:last-child)::after {
+    content: ','; }
   ul.projects .btn-check-it-out {
     float: right;
     color: #2a7ae2; }

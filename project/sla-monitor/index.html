@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This project started as a way for me to measure the quality of my home internet connection. Specifically, I wanted to monitor the real-time status of my home...">
+
+    <title>sla-monitor</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Play:700|Open+Sans:400,700|Roboto+Slab:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://websocks.net/project/sla-monitor">
+
+    
+</head>
+
+
+    <body class="container">
+        <div class="row">
+            <nav class="col-sm-4">
+                <div class="logo">
+    <h1><a href="/">websocks</a></h1>
+</div>
+<hr>
+<p>I'm <strong>Nathan Nelson</strong>, a software engineer working at <a href="http://www.pearsoned.com/">Pearson</a>.</p>
+<p>This site is a place for me to show off some of the projects I'm working on.</p>
+<hr>
+<ul class="contact">
+    <li>
+        <a href="mailto:osidenate@gmail.com">
+            <span class="navicon glyphicon glyphicon-envelope"></span>
+            osidenate@gmail.com
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/osidenate">
+            <span class="navicon navicon-github"></span>
+            GitHub
+        </a>
+    </li>
+    <li>
+        <a href="https://stackoverflow.com/users/477442/nathan">
+            <span class="navicon navicon-so"></span>
+            StackOverflow
+        </a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/pub/nathan-nelson/1b/878/744">
+            <span class="navicon navicon-linkedin"></span>
+            LinkedIn
+        </a>
+    </li>
+</ul>
+<hr class="visible-xs-block">
+
+            </nav>
+
+            <main class="col-sm-8">
+                <div class="project">
+    <a class="back-link" href="/">
+        <span class="glyphicon glyphicon-chevron-left"></span>Back Home
+    </a>
+
+    <h2>sla-monitor</h2>
+
+    <p>GitHub: <a href="https://github.com/osidenate/sla-monitor">https://github.com/osidenate/sla-monitor</a></p>
+
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active">
+            <a href="#overview"
+               aria-controls="overview"
+               role="tab"
+               data-toggle="tab">Overview</a>
+        </li>
+
+        
+        <li role="presentation">
+            <a href="#screenshots"
+                aria-controls="screenshots"
+                role="tab"
+                data-toggle="tab">Screenshots</a>
+        </li>
+        
+
+        
+    </ul>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="overview">
+            <p>This project started as a way for me to measure the quality of my home internet connection. Specifically, I wanted to monitor the real-time status of my home server.</p>
+
+<p>There are three components to this system:</p>
+
+<ul>
+  <li><strong>sla-monitor</strong>: A .NET console application that measures &amp; records latencies. This runs on my home server.</li>
+  <li><strong>sla-web</strong>: An AngularJS application that can display the latencies recorded by sla-monitor in real-time.</li>
+  <li><strong>firebase</strong>: Stores the configuration for sla-monitor and records the latest latencies.</li>
+</ul>
+
+<p><img src="http://websocks.net/img/sla-monitor-diagram.png" alt="SLA Monitor Diagram" /></p>
+
+<p>For more information about this project, check out it’s <a href="https://github.com/osidenate/sla-monitor">GitHub page</a>.</p>
+
+        </div>
+
+        
+        <div role="tabpanel" class="tab-pane" id="screenshots">
+            
+<img src="/img/sla-monitor-screenshot.png" alt="Screenshot">
+
+
+        </div>
+        
+
+        
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        
+    </body>
+</html>
