@@ -110,31 +110,6 @@ pre {
     padding-left: 0; }
 
 /**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
-
-/**
- * Clearfix
- */
-.wrapper:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/**
  * Icons
  */
 .icon > svg {
@@ -295,6 +270,8 @@ pre {
 ul.projects {
   margin-left: 0;
   list-style-type: none; }
+  ul.projects .panel {
+    box-shadow: 1px 1px 0px #888; }
   ul.projects .tags {
     color: #777;
     font-size: 0.8em; }
@@ -304,11 +281,15 @@ ul.projects {
     margin-left: 2px; }
   ul.projects .tag:not(:last-child)::after {
     content: ','; }
-  ul.projects .btn-check-it-out {
+  ul.projects a.check-it-out {
     float: right;
     color: #2a7ae2; }
-  ul.projects .btn-check-it-out:hover {
-    color: #333; }
+    ul.projects a.check-it-out:hover {
+      color: #144b92; }
+    ul.projects a.check-it-out:visited {
+      color: #1756a9; }
+    ul.projects a.check-it-out .btn {
+      color: inherit; }
 
 nav .logo {
   text-align: center; }
@@ -323,7 +304,7 @@ nav .logo {
     nav .logo h1 a:hover {
       color: #173E73; }
 nav hr {
-  border-top: 1px dotted #ddd;
+  border-top: 1px dotted #ccc;
   margin: 15px 0; }
 nav ul.contact {
   margin-left: 0; }
