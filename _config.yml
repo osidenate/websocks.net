@@ -1,11 +1,11 @@
 # Site settings
-title: websocks
-email: osidenate@gmail.com
+title: websocks.net - Nathan Nelson
+email: nathan@websocks.net
 description: >
   Nathan Nelson's software projects.
 baseurl: ""
 url: "http://websocks.net"
-github_username:  osidenate
+github_username: osidenate
 
 # Build settings
 markdown: kramdown

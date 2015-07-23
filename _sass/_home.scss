@@ -2,6 +2,10 @@ ul.projects {
   margin-left: 0;
   list-style-type: none;
 
+  .panel {
+    box-shadow: 1px 1px 0px #888;
+  }
+
   .tags {
     color: #777;
     font-size: 0.8em;
@@ -19,12 +23,20 @@ ul.projects {
     content: ',';
   }
 
-  .btn-check-it-out {
+  a.check-it-out {
     float: right;
-    color: #2a7ae2;
-  }
+    color: $brand-color;
 
-  .btn-check-it-out:hover {
-    color: #333;
+    &:hover {
+      color: $brand-color-dark;
+    }
+
+    &:visited {
+      color: darken($brand-color, 15%);
+    }
+
+    .btn {
+      color: inherit;
+    }
   }
 }
