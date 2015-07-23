@@ -145,14 +145,14 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
-html {
-  background: url("../img/dots.png") repeat; }
+@media (min-width: 768px) {
+  html {
+    background: url("../img/dots.png") repeat; }
 
-.container {
-  margin-top: 15px;
-  padding-top: 10px;
-  background: #fff; }
-
+  .container {
+    margin-top: 15px;
+    padding-top: 10px;
+    background: #fff; } }
 /**
  * Syntax highlighting styles
  */
@@ -295,6 +295,11 @@ html {
 ul.projects {
   margin-left: 0;
   list-style-type: none; }
+  ul.projects .btn-check-it-out {
+    float: right;
+    color: #2a7ae2; }
+  ul.projects .btn-check-it-out:hover {
+    color: #333; }
 
 nav .logo {
   text-align: center; }
@@ -348,3 +353,9 @@ nav ul.contact {
   margin-left: 0; }
 .project .tab-content {
   margin-top: 15px; }
+.project .back-link {
+  float: right;
+  font-size: 0.8em; }
+  .project .back-link .glyphicon {
+    font-size: 0.9em;
+    margin-right: 5px; }
