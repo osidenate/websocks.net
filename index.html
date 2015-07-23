@@ -11,6 +11,14 @@ layout: default
         </div>
         <div class="panel-body">
             <p>{{ project.brief }}</p>
+            {% if project.tags %}
+            <span class="tags">
+                <strong>Tags:</strong>
+                {% for tag in project.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </span>
+            {% endif %}
             <a href="{{ project.url }}">
                 <button class="btn btn-default btn-check-it-out">Check it out »</button>
             </a>

@@ -2,6 +2,23 @@ ul.projects {
   margin-left: 0;
   list-style-type: none;
 
+  .tags {
+    color: #777;
+    font-size: 0.8em;
+  }
+
+  .tags strong {
+    color: #333;
+  }
+
+  .tag {
+    margin-left: 2px;
+  }
+
+  .tag:not(:last-child)::after {
+    content: ',';
+  }
+
   .btn-check-it-out {
     float: right;
     color: #2a7ae2;
