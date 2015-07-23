@@ -11,7 +11,7 @@ layout: default
         </div>
         <div class="panel-body">
             <p>{{ project.brief }}</p>
-            {% if project.tags %}
+            {% if project.tags.size > 0 %}
             <span class="tags">
                 <strong>Tags:</strong>
                 {% for tag in project.tags %}

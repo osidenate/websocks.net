@@ -1,15 +1,10 @@
 ---
 title: "sla-monitor"
 layout: project
-categories: project
 permalink: project/sla-monitor
 
 brief: "This .NET Console application records the latency between my home server and other servers across the internet."
-tags: 
-    - .NET
-    - C#
-    - Firebase
-    - Multi-threading
+tags: .NET C# Firebase Multi-threading
 
 gitHubUrl: https://github.com/osidenate/sla-monitor
 screenshotBundle:

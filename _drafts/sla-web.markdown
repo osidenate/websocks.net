@@ -1,7 +1,6 @@
 ---
 title: "sla-web"
 layout: project
-categories: project
 permalink: project/sla-web
 
 brief: "Hello World"
