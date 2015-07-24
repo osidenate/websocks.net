@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<h3>Featured Projects</h3>
 <ul class="projects">
     {% for project in site.posts %}
     {% if project.layout == 'project' %}
@@ -19,8 +20,8 @@ layout: default
                 {% endfor %}
             </span>
             {% endif %}
-            <a class="check-it-out" href="{{ project.url }}">
-                <button class="btn btn-default">Check it out »</button>
+            <a class="btn btn-default check-it-out" href="{{ project.url }}">
+                Check it out »
             </a>
         </div>
     </li>

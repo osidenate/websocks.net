@@ -20,10 +20,9 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
+$visible-sm:       768px;
+$visible-md:       992px;
+$visible-lg:      1200px;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -32,10 +31,17 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
+}
+
+@mixin media-query-max($device) {
+  @media screen and (max-width: $device - 1) {
+    @content;
+  }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
