@@ -318,7 +318,7 @@ nav ul.contact {
   nav hr {
     margin-top: 10px; }
   nav .vcard {
-    margin-bottom: 5px; }
+    margin-bottom: 10px; }
   nav ul.contact {
     text-align: center;
     font-size: 1.2em; }
@@ -327,7 +327,7 @@ nav ul.contact {
     nav ul.contact li.mail {
       display: block;
       text-align: center;
-      margin-bottom: 5px; }
+      margin-bottom: 10px; }
     nav ul.contact .navicon {
       position: relative;
       display: inline-block;
@@ -336,7 +336,8 @@ nav ul.contact {
       vertical-align: middle;
       margin-left: 15px;
       margin-right: 15px;
-      border: 1px solid transparent; }
+      border: 1px solid transparent;
+      border-radius: 3px; }
     nav ul.contact .navicon:hover {
       border: 1px solid #ddd; }
     nav ul.contact .navicon.glyphicon-envelope {
