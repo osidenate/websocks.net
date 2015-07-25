@@ -116,6 +116,10 @@ nav {
       .more-info-opener {
         display: block;
         position: relative;
+
+        hr {
+          margin: 20px 0;
+        }
       }
 
       .more-info-opener .toggle-nav {
@@ -126,7 +130,7 @@ nav {
         padding: 2px 15px;
         top: -15px;
         left: 50%;
-        margin-left: -37px;
+        margin-left: -25px;
         color: #777;
         font-size: 1.1em;
         z-index: 5;
