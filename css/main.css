@@ -276,6 +276,9 @@ ul.projects {
   ul.projects .panel {
     box-shadow: 1px 1px 0px #888; }
   ul.projects .tags {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
     color: #777;
     font-size: 0.8em; }
   ul.projects .tags strong {
