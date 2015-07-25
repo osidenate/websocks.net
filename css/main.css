@@ -128,6 +128,9 @@ pre {
     margin-top: 15px;
     padding-top: 10px;
     background: #fff; } }
+main {
+  background: #fff; }
+
 /**
  * Syntax highlighting styles
  */
@@ -303,6 +306,8 @@ nav .logo {
       text-decoration: none; }
     nav .logo h1 a:hover {
       color: #173E73; }
+nav .more-info-opener {
+  display: none; }
 nav hr {
   border-top: 1px dotted #ccc;
   margin: 15px 0; }
@@ -317,7 +322,7 @@ nav ul.contact {
     margin-bottom: 0; }
   nav hr {
     margin-top: 10px; }
-  nav .vcard {
+  nav .overview {
     margin-bottom: 10px; }
   nav ul.contact {
     text-align: center;
@@ -356,7 +361,24 @@ nav ul.contact {
     nav ul.contact .navicon-linkedin {
       background: url("../img/social/In-2CRev-75px-R.png") no-repeat;
       background-size: 50px;
-      background-position: 6px; } }
+      background-position: 6px; }
+  nav .closed .more-info {
+    display: none; }
+  nav .closed .more-info-opener {
+    display: block;
+    position: relative; }
+  nav .closed .more-info-opener .toggle-nav {
+    position: absolute;
+    background-color: #fff;
+    border: 1px dotted #ccc;
+    border-radius: 4px;
+    padding: 2px 15px;
+    top: -15px;
+    left: 50%;
+    margin-left: -37px;
+    color: #777;
+    font-size: 1.1em;
+    z-index: 5; } }
 @media screen and (min-width: 768px) {
   nav .contact a {
     text-decoration: none; }
