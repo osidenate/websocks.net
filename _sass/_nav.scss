@@ -19,11 +19,14 @@ nav {
     }
   }
 
+  .more-info-opener {
+    display: none;
+  }
+
   hr {
     border-top: 1px dotted #ccc;
     margin: 15px 0;
   }
-
 
   ul.contact {
     margin-left: 0;
@@ -45,7 +48,7 @@ nav {
       margin-top: 10px;
     }
 
-    .vcard {
+    .overview {
       margin-bottom: 10px;
     }
 
@@ -102,6 +105,31 @@ nav {
         background: url('../img/social/In-2CRev-75px-R.png') no-repeat;
         background-size: 50px;
         background-position: 6px;
+      }
+    }
+
+    .closed {
+      .more-info {
+        display: none;
+      }
+
+      .more-info-opener {
+        display: block;
+        position: relative;
+      }
+
+      .more-info-opener .toggle-nav {
+        position: absolute;
+        background-color: #fff;
+        border: 1px dotted #ccc;
+        border-radius: 4px;
+        padding: 2px 15px;
+        top: -15px;
+        left: 50%;
+        margin-left: -37px;
+        color: #777;
+        font-size: 1.1em;
+        z-index: 5;
       }
     }
   }

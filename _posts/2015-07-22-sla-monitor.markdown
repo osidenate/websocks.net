@@ -2,6 +2,7 @@
 title: "sla-monitor"
 layout: project
 permalink: project/sla-monitor
+hideMoreInfo: true
 
 brief: "This .NET Console application records the latency between my home server and other servers across the internet."
 tags: .NET C# Firebase Multi-threading
