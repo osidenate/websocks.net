@@ -377,13 +377,16 @@ nav ul.contact {
     background-color: #fff;
     border: 1px dotted #ccc;
     border-radius: 4px;
-    padding: 2px 15px;
+    padding: 2px 15px 20px 15px;
     top: -15px;
     left: 50%;
     margin-left: -25px;
     color: #777;
-    font-size: 1.1em;
-    z-index: 5; } }
+    font-size: 1.75em;
+    z-index: 5;
+    line-height: 6px; }
+  nav .closed .more-info-opener .toggle-nav:hover {
+    background-color: #e6e6e6; } }
 @media screen and (min-width: 768px) {
   nav .contact a {
     text-decoration: none; }
