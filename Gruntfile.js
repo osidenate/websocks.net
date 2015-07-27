@@ -29,7 +29,11 @@ module.exports = function(grunt) {
                 '_site/LICENSE',
                 '_site/package.json',
                 '_site/bower.json',
-                '_site/README.md'
+                '_site/README.md',
+                '_site/css/*.css',
+                '!_site/css/*.min.*.css',
+                '_site/scripts/*.js',
+                '!_site/scripts/*.min.*.js'
             ]
         },
         filerev: {
@@ -49,8 +53,7 @@ module.exports = function(grunt) {
         usemin: {
             options: {
                 assetsDirs: [
-                    '_site/css',
-                    '_site/scripts'
+                    '_site'
                 ],
                 blockReplacements: {
                     pagesCss: function (block) {
@@ -79,10 +82,7 @@ module.exports = function(grunt) {
         },
         useminPages: {
             options: {
-                assetsDirs: [
-                    '_site/css',
-                    '_site/scripts'
-                ]
+                assetsDirs: '_site'
             },
             html: '_site/project/**/*.html'
         }
@@ -114,13 +114,13 @@ module.exports = function(grunt) {
         'filerev:site',
         'usemin',
 
-        // Bundle Page Level Assets
-        //'useminPreparePages',
-        //'concat:generated',
-        //'cssmin:generated',
-        //'uglify:generated',
-        //'filerev:pages',
-        //'useminPages',
+         // Bundle Page Level Assets
+        'useminPreparePages',
+        'concat:generated',
+        'cssmin:generated',
+        'uglify:generated',
+        'filerev:site',
+        'useminPages',
 
         'clean:package'
     ]);
