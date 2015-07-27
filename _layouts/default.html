@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>>
+<html>
 
     {% include head.html %}
 
@@ -21,7 +21,7 @@
         <!-- endbuild -->
 
         {% if page.jsBundle %}
-        <!-- build:js /scripts/{{ page.title }}.min.js -->
+        <!-- build:pagesJs /scripts/{{ page.title }}.min.js -->
         {% for src in page.jsBundle %}
         <script src="{{ src }}"></script>
         {% endfor %}

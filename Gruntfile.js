@@ -22,7 +22,8 @@ module.exports = function(grunt) {
             }
         },
         clean: {
-            site: [
+            site: '_site/*',
+            package: [
                 '_site/node_modules',
                 '_site/Gruntfile.js',
                 '_site/LICENSE',
@@ -34,8 +35,8 @@ module.exports = function(grunt) {
         filerev: {
             site: {
                 src: [
-                    '_site/css/**/*.css',
-                    '_site/scripts/**/*.js'
+                    '_site/css/**/*.min.css',
+                    '_site/scripts/**/*.min.js'
                 ]
             }
         },
@@ -50,47 +51,59 @@ module.exports = function(grunt) {
                 assetsDirs: [
                     '_site/css',
                     '_site/scripts'
-                ]
+                ],
+                blockReplacements: {
+                    pagesCss: function (block) {
+                        return block.raw.reduce(function(prevLine, currLine) {
+                            return (prevLine + '\r\n' + currLine).replace('pagesCss', 'css');
+                        });
+                    },
+                    pagesJs: function (block) {
+                        return block.raw.reduce(function(prevLine, currLine) {
+                            return (prevLine + '\r\n' + currLine).replace('pagesJs', 'js');
+                        });
+                    }
+                }
             },
             html: [
                 '_site/index.html',
                 '_site/project/**/*.html'
             ]
         },
-        useminPrepareProjects: {
+        useminPreparePages: {
             html: '_site/project/**/*.html',
             options: {
+                root: '_site',
                 dest: '_site'
             }
         },
-        useminProjects: {
+        useminPages: {
             options: {
                 assetsDirs: [
                     '_site/css',
                     '_site/scripts'
                 ]
             },
-            html: [
-                '_site/project/**/*.html'
-            ]
+            html: '_site/project/**/*.html'
         }
     });
 
-    grunt.registerTask('useminPrepareProjects', function () {
-        var useminPrepareProjects = grunt.config('useminPrepareProjects');
-        grunt.config.set('useminPrepare', useminPrepareProjects);
+    grunt.registerTask('useminPreparePages', function () {
+        var useminPreparePages = grunt.config('useminPreparePages');
+        grunt.config.set('useminPrepare', useminPreparePages);
         grunt.task.run('useminPrepare');
     });
 
-    grunt.registerTask('useminProjects', function () {
-        var useminProjects = grunt.config('useminProjects');
-        grunt.config.set('usemin', useminProjects);
+    grunt.registerTask('useminPages', function () {
+        var useminPages = grunt.config('useminPages');
+        grunt.config.set('usemin', useminPages);
         grunt.task.run('usemin');
     });
 
-    grunt.registerTask('serve', ['shell:jekyll_serve']);
+    grunt.registerTask('serve', ['clean:site', 'shell:jekyll_serve']);
 
     grunt.registerTask('package', [
+        'clean:site',
         'shell:jekyll_build',
 
         // Bundle Site Level Assets
@@ -98,16 +111,18 @@ module.exports = function(grunt) {
         'concat:generated',
         'cssmin:generated',
         'uglify:generated',
+        'filerev:site',
         'usemin',
 
         // Bundle Page Level Assets
-        'useminPrepareProjects',
-        'concat:generated',
-        'cssmin:generated',
-        'uglify:generated',
-        'useminProjects',
+        //'useminPreparePages',
+        //'concat:generated',
+        //'cssmin:generated',
+        //'uglify:generated',
+        //'filerev:pages',
+        //'useminPages',
 
-        'clean:site'
+        'clean:package'
     ]);
 
     grunt.registerTask('deploy', [

@@ -16,7 +16,7 @@
     <!-- endbuild -->
 
     {% if page.cssBundle %}
-    <!-- build:css /css/{{ page.title }}.min.css -->
+    <!-- build:pagesCss /css/{{ page.title }}.min.css -->
     {% for src in page.cssBundle %}
     <link rel="stylesheet" href="{{ src }}">
     {% endfor %}
