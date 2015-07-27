@@ -33,8 +33,19 @@ module.exports = function(grunt) {
                 '_site/css/*.css',
                 '!_site/css/*.min.*.css',
                 '_site/scripts/*.js',
-                '!_site/scripts/*.min.*.js'
+                '!_site/scripts/*.min.*.js',
+                '_site/bower_components/**/*',
+                '!_site/bower_components/osidenate-sla-web/dist'
             ]
+        },
+        copy: {
+            fonts: {
+                expand: true,
+                cwd: '_site/bower_components/bootstrap/dist/fonts/',
+                src: ['**'],
+                dest: '_site/fonts/'
+
+            }
         },
         filerev: {
             site: {
@@ -122,6 +133,7 @@ module.exports = function(grunt) {
         'filerev:site',
         'useminPages',
 
+        'copy:fonts',
         'clean:package'
     ]);
 
