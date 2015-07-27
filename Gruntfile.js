@@ -34,7 +34,9 @@ module.exports = function(grunt) {
                 '!_site/css/*.min.*.css',
                 '_site/scripts/*.js',
                 '!_site/scripts/*.min.*.js',
-                '_site/bower_components/**/*',
+                '_site/bower_components/*',
+                '!_site/bower_components/osidenate-sla-web',
+                '_site/bower_components/osidenate-sla-web/*',
                 '!_site/bower_components/osidenate-sla-web/dist'
             ]
         },
