@@ -55,6 +55,27 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        htmlmin: {
+            options: {
+                removeComments: true,
+                collapseWhitespace: true,
+                conservativeCollapse: true
+            },
+            site: {
+                files: [
+                    {
+                        '_site/index.html': '_site/index.html'
+                    },
+                    {
+                        expand: true,
+                        cwd: '_site/project/',
+                        src: ['**/*.html'],
+                        dest: '_site/project/'
+                    }
+                ]
+
+            }
+        },
         useminPrepare: {
             html: '_site/index.html',
             options: {
@@ -133,6 +154,7 @@ module.exports = function(grunt) {
         'filerev:site',
         'useminPages',
 
+        'htmlmin:site',
         'copy:fonts',
         'clean:package'
     ]);
