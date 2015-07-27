@@ -5,16 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This project started as a way for me to measure the quality of my home internet connection. Specifically, I wanted to monitor the real-time status of my home...">
+    <meta name="description" content="This is a test. Hello World">
 
-    <title>sla-monitor</title>
+    <title>sla-web</title>
 
-    <link rel="canonical" href="http://websocks.net/project/sla-monitor">
+    <link rel="canonical" href="http://websocks.net/project/sla-web">
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Play:700|Open+Sans:400,700|Roboto+Slab:700,400">
 
     <link rel="stylesheet" href="/css/site.min.b904962b.css">
 
+    
+        <link rel="stylesheet" href="/css/sla-web.min.b7b24882.css">
     
 </head>
 
@@ -26,7 +28,7 @@
     <h1><a href="/">websocks</a></h1>
 </div>
 
-<div class="more-info-container closed">
+<div class="more-info-container ">
     <div class="vcard more-info">
         <hr>
         <p class="overview">
@@ -75,9 +77,9 @@
         <span class="glyphicon glyphicon-chevron-left"></span>Back Home
     </a>
 
-    <h3>sla-monitor</h3>
+    <h3>sla-web</h3>
 
-    <p>GitHub: <a href="https://github.com/osidenate/sla-monitor">https://github.com/osidenate/sla-monitor</a></p>
+    <p>GitHub: <a href="https://github.com/osidenate/sla-web">https://github.com/osidenate/sla-web</a></p>
 
     <ul class="nav nav-tabs">
         <li role="presentation" class="active">
@@ -88,43 +90,40 @@
         </li>
 
         
-        <li role="presentation">
-            <a href="#screenshots"
-                aria-controls="screenshots"
-                role="tab"
-                data-toggle="tab">Screenshots</a>
-        </li>
-        
 
+        
+        <li role="presentation">
+            <a href="#demo"
+               aria-controls="demo"
+               role="tab"
+               data-toggle="tab">Demo</a>
+        </li>
         
     </ul>
 
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="overview">
-            <p>This project started as a way for me to measure the quality of my home internet connection. Specifically, I wanted to monitor the real-time status of my home server.</p>
-
-<p>There are three components to this system:</p>
-
-<ul>
-  <li><strong>sla-monitor</strong>: A .NET console application that measures &amp; records latencies. This runs on my home server.</li>
-  <li><strong>sla-web</strong>: An AngularJS application that can display the latencies recorded by sla-monitor in real-time.</li>
-  <li><strong>firebase</strong>: Stores the configuration for sla-monitor and records the latest latencies.</li>
-</ul>
+            <p>This is a test. Hello World</p>
 
 <p><img src="http://websocks.net/img/sla-monitor-diagram.png" alt="SLA Monitor Diagram" /></p>
 
-<p>For more information about this project, check out it’s <a href="https://github.com/osidenate/sla-monitor">GitHub page</a>.</p>
-
         </div>
 
         
-        <div role="tabpanel" class="tab-pane" id="screenshots">
-            
-            <img src="/img/sla-monitor-screenshot.png" alt="Screenshot">
-            
-        </div>
-        
 
+        
+        <div role="tabpanel" class="tab-pane" id="demo">
+            This is a demo page test.
+
+<div ng-app="sla">
+    <live-monitor class="row" config-id="0" buffer-size="5" template-url="/bower_components/osidenate-sla-web/dist/components/live-monitor/live-monitor.htm"></live-monitor>
+    <live-monitor class="row" config-id="1" buffer-size="5" template-url="/bower_components/osidenate-sla-web/dist/components/live-monitor/live-monitor.htm"></live-monitor>
+    <live-monitor class="row" config-id="2" buffer-size="5" template-url="/bower_components/osidenate-sla-web/dist/components/live-monitor/live-monitor.htm"></live-monitor>
+    <live-monitor class="row" config-id="3" buffer-size="5" template-url="/bower_components/osidenate-sla-web/dist/components/live-monitor/live-monitor.htm"></live-monitor>
+    <live-monitor class="row" config-id="4" buffer-size="5" template-url="/bower_components/osidenate-sla-web/dist/components/live-monitor/live-monitor.htm"></live-monitor>
+</div>
+
+        </div>
         
 
     </div>
@@ -135,6 +134,8 @@
 
         <script src="/scripts/site.min.1d485fb1.js"></script>
 
+        
+                <script src="/scripts/sla-web.min.4ef06c0d.js"></script>
         
     </body>
 </html>
