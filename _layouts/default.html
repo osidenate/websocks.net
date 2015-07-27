@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html>>
 
     {% include head.html %}
 
@@ -14,13 +14,18 @@
             </main>
         </div>
 
+        <!-- build:js /scripts/site.min.js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="/scripts/app.js"></script>
+        <!-- endbuild -->
+
         {% if page.jsBundle %}
+        <!-- build:js /scripts/{{ page.title }}.min.js -->
         {% for src in page.jsBundle %}
         <script src="{{ src }}"></script>
         {% endfor %}
+        <!-- endbuild -->
         {% endif %}
     </body>
 </html>
