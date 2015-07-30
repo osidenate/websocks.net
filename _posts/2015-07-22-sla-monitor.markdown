@@ -4,7 +4,9 @@ layout: project
 permalink: project/sla-monitor
 hideMoreInfo: true
 
-brief: "This .NET Console application records the latency between my home server and other servers across the internet."
+brief: >
+    This .NET Console application records the latency between my home server and other servers across the internet.
+    It is designed to be used in conjunction with sla-web, which provides a front-end interface.
 tags: .NET C# Firebase Multi-threading
 
 gitHubUrl: https://github.com/osidenate/sla-monitor
@@ -12,7 +14,11 @@ screenshotBundle:
     - /img/sla-monitor-screenshot.png
 ---
 
-This project started as a way for me to measure the quality of my home internet connection. Specifically, I wanted to monitor the real-time status of my home server. 
+This project started as a way for me to measure the quality of my home internet connection.
+I wanted to monitor the latency between my home server and other computers in real-time.
+
+This part of the system, sla-monitor, is a .NET Console application. It runs on my home server and pings other computers across the internet.
+It then records the latency to Firebase.
 
 There are three components to this system:
 
@@ -23,3 +29,5 @@ There are three components to this system:
 ![SLA Monitor Diagram](http://websocks.net/img/sla-monitor-diagram.png)
 
 For more information about this project, check out it's [GitHub page](https://github.com/osidenate/sla-monitor).
+
+For more information about the front-end, check out [sla-web](/project/sla-web).
