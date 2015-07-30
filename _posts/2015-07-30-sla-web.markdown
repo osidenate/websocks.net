@@ -2,6 +2,7 @@
 title: "sla-web"
 layout: project
 permalink: project/sla-web
+hideMoreInfo: true
 
 brief: >
     This AngularJS webapp allows me to monitor the connection of my home server in real-time.
