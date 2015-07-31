@@ -87,6 +87,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+strong {
+    color: #4D4D4D;
+}
+
+
+
 /**
  * Links
  */
@@ -133,6 +139,7 @@ code {
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
+    color: #b55;
 }
 
 code {
