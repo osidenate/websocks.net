@@ -18,7 +18,7 @@ There are three main goals I have for this site:
 
 - **Maintainability**: It should be easy to maintain and update project posts. Deployments should be a breeze.
 - **Performance**: It should load as fast as possible even on poor internet connections.
-- **Accessibility**: It should be provide quick access to important information and be accessible to as many users as possible regardless of device choice. Users with disabilities should also be able to use the site acceptably.
+- **Accessibility**: It should be provide quick access to important information and be accessible to as many users as possible regardless of device choice.
 
 #### Jekyll
 Jekyll is the primary framework used for this site.
