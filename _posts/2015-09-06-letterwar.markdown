@@ -3,6 +3,7 @@ title: "Letterwar (In Progress)"
 layout: project
 permalink: project/letterwar
 hideMoreInfo: true
+demoHtml: demo-letterwar.html
 
 brief: >
      Letterwar is an open source word game based on Android's Letterplex. It is currently in alpha - not all features have finished devleopment.
@@ -18,8 +19,6 @@ If you've ever played Android's [Letterplex](https://play.google.com/store/apps/
 Letterwar is an open source clone of these games. Rather than being a native app, Letterwar runs in your browser.
  
 Letterwar is still in alpha - not all features have been developed and it is not stable.
-
-See a live demo of the current build at [letterwar.websocks.net](http://letterwar.websocks.net/).
 
 ### System Overview
 
