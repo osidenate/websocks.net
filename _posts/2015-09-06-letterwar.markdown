@@ -19,6 +19,8 @@ Letterwar is an open source clone of these games. Rather than being a native app
  
 Letterwar is still in alpha - not all features have been developed and it is not stable.
 
+See a live demo of the current build at [letterwar.websocks.net](http://letterwar.websocks.net/).
+
 ### System Overview
 
 Letterwar consists of three different projects:
