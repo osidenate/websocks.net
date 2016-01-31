@@ -27,6 +27,9 @@ The site has not yet been tested on screen readers such as VoiceOver or JAWS.
 Get the Source:
 `git clone https://github.com/osidenate/websocks.git`
 
+Install ruby dependencies:
+`gem install jekyll`
+
 Install the npm dependencies:
 `npm install`
 
@@ -34,7 +37,7 @@ Install the bower dependencies:
 `bower install`
 
 Start the webserver:
-`grunt server`
+`grunt serve`
 
 The site should be running at **http://localhost:4000**.
 
