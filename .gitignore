@@ -1,7 +1,4 @@
-_site
-.sass-cache
 .idea
 node_modules
 .grunt
-bower_components
 .tmp

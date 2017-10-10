@@ -1,7 +1,7 @@
 {
   "name": "websocks.net",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Nathan Nelson's personal website",
   "repository": {
     "type": "git",
     "url": "https://github.com/osidenate/websocks.net.git"
@@ -13,17 +13,15 @@
   },
   "homepage": "https://osidenate.github.io/websocks.net",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-cssmin": "^0.12.3",
-    "grunt-contrib-htmlmin": "^0.4.0",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-filerev": "^2.3.1",
-    "grunt-gh-pages": "^0.10.0",
-    "grunt-shell": "^1.1.2",
-    "grunt-usemin": "^3.0.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-gh-pages": "^2.0.0",
     "load-grunt-tasks": "^3.2.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "serve": "./node_modules/grunt-cli/bin/grunt serve",
+    "deploy": "./node_modules/grunt-cli/bin/grunt deploy"
   }
 }
