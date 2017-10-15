@@ -21,7 +21,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "serve": "./node_modules/grunt-cli/bin/grunt serve",
-    "deploy": "./node_modules/grunt-cli/bin/grunt deploy"
+    "serve": "node ./node_modules/grunt-cli/bin/grunt serve",
+    "deploy": "node ./node_modules/grunt-cli/bin/grunt deploy"
   }
 }
