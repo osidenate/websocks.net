@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: #333;
+  font-size: 26px;
+  font-family: "Roboto Slab", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+}
+
+.name {
+  color: #1756a9;
+  margin: 20px auto;
+}
+
+.email-icon {
+  color: #A9A9A9;
+  font-size: 0.9em;
+}
+
+.social {
+  display: flex;
+  margin: 20px auto;
+  font-size: 1.3em;
+}
+
+.social .icon {
+  color: #333;
+  text-decoration: none;
+  margin: auto 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.social .icon:hover {
+  color: #777;
+}
