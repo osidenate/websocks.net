@@ -1,70 +1,38 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Nathan Nelson's software projects.">
 
-    <title>websocks.net - Nathan Nelson</title>
+    <title>Nathan Nelson</title>
 
     <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Play:700|Open+Sans:400,700|Roboto+Slab:700,400">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:700,400">
     <link rel="stylesheet" href="./home.css">
 </head>
 
-<body class="container">
-<div class="row">
-    <nav class="col-sm-4">
-        <div class="logo">
-            <h1><a href="/">websocks</a></h1>
-        </div>
-
-        <div class="more-info-container ">
-            <div class="vcard more-info">
-                <hr>
-                <p class="overview">
-                    I'm <strong class="fn">Nathan Nelson</strong>, a software engineer in Seattle, WA.
-                </p>
-                <hr class="hidden-xs">
-                <ul class="contact">
-                    <li class="mail">
-                        <a href="mailto:nathan@websocks.net">
-                            <span class="navicon glyphicon glyphicon-envelope hidden-xs" title="E-Mail"></span>
-                            <span class="email">nathan@websocks.net</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/osidenate">
-                            <span class="navicon navicon-github" title="GitHub"></span>
-                            <span class="hidden-xs">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://stackoverflow.com/users/477442/nathan">
-                            <span class="navicon navicon-so" title="Stack Overflow"></span>
-                            <span class="hidden-xs">Stack Overflow</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/pub/nathan-nelson/1b/878/744">
-                            <span class="navicon navicon-linkedin" title="LinkedIn"></span>
-                            <span class="hidden-xs">LinkedIn</span>
-                        </a>
-                    </li>
-                </ul>
-                <hr class="visible-xs-block">
-            </div>
-            <div class="more-info-opener">
-                <hr>
-                <button class="btn btn-default toggle-nav">&hellip;</button>
-            </div>
-        </div>
-
-    </nav>
-
+<body>
+<div class="container h-card">
+    <h1 class="name p-name">Nathan Nelson</h1> <!-- todo specify alias in metadata -->
+    <div class="email">
+        <i class="email-icon fa fa-envelope-o" title="E-Mail"></i>
+        <span>nathan@websocks.net</span> <!-- todo anti-spam -->
+    </div>
+    <div class="social">
+        <a class="icon email" href="https://github.com/osidenate">
+            <i class="fa fa-github" title="GitHub"></i>
+        </a>
+        <a class="icon stack-overflow" href="https://stackoverflow.com/users/477442/nathan">
+            <i class="fa fa-stack-overflow" title="Stack Overflow"></i>
+        </a>
+        <a class="icon linkedin" href="https://www.linkedin.com/pub/nathan-nelson/1b/878/744">
+            <i class="fa fa-linkedin" title="LinkedIn"></i>
+        </a>
+    </div>
 </div>
 </body>
 </html>
