@@ -5,13 +5,13 @@ This is Nathan Nelson's personal website
 
 Install dependencies using npm or yarn:
 
-`yarn install`
+`npm i`
 
 Start the web server:
 
-`yarn serve`
+`npm run serve`
 
 Deploy to GitHub pages:
 
-`yarn deploy`
+`npm run deploy`
  
