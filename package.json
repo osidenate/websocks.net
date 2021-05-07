@@ -13,7 +13,7 @@
   },
   "homepage": "https://osidenate.github.io/websocks.net",
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.3.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-gh-pages": "^3.1.0",
